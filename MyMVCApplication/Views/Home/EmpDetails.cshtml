@@ -1,0 +1,67 @@
+﻿@model List<MyMVCApplication.Models.EmployeeDetatils>
+
+@{
+    ViewBag.Title = "Emp Details";
+}
+
+<h2>My Details</h2>
+
+<div>
+    <h4>EmployeeDetatils</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <table style="width:100%">
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                </tr>
+            }
+            </table>
+
+            @*<dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>*@
+
+</dl>
+</div>
+
